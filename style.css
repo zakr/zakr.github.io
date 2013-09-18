@@ -3,9 +3,10 @@ body{
 	background-image: url("imgres.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;*/
+	background-position: center;
 
-	background: #00FFFF url("imgres.jpg") no-repeat fixed center;
+	background: #00FFFF url("imgres.jpg") no-repeat fixed center;*/
+	background-image: url("http://subtlepatterns.com/patterns/wild_flowers.png");
 	font-family: 'Kavoon', cursive;
 }
 
