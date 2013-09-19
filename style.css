@@ -22,3 +22,24 @@ h1{
 h3{
 	color: #FF0000;
 }
+
+#fade{
+  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_4IdSbDOCsx-7RdtWy1sg8jIApK6PqVJHrLNDgT_d1EHIltJc);
+  background-repeat: repeat;
+  width: 500px; 
+height: 214px; 
+margin: 0;
+padding: 0;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+#fade:hover{
+  background-image: url(http://25.media.tumblr.com/tumblr_lu03bquYET1qztmnoo1_500.gif);
+  background-repeat: no-repeat;
+  width: 500px; 
+height: 214px; 
+margin: 0;
+padding: 0;
+}
