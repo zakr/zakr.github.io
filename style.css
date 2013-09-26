@@ -7,7 +7,8 @@ body{
 
 	background: #00FFFF url("imgres.jpg") no-repeat fixed center;*/
 	background-image: url("http://subtlepatterns.com/patterns/wild_flowers.png");
-	font-family: 'Kavoon', cursive;
+	font-family: 'Palatino', 'Tahoma';
+
 }
 
 p{
@@ -15,12 +16,8 @@ p{
 	color: #222222;
 }
 
-h1{
-	color: #FF0000;
-}
-
-h3{
-	color: #FF0000;
+h1, h2{
+	color: #FF1200;
 }
 
 #fade{
@@ -42,4 +39,43 @@ padding: 0;
 height: 214px; 
 margin: 0;
 padding: 0;
+}
+
+#navigation li {
+        list-style: none;
+        display: block;
+        float: left;
+        margin: 1em;
+}
+
+#navigation li a {
+        text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+        display: block;
+        text-decoration: none;
+        color: #00FF6B;
+        font-size: 1.6em;
+        margin: 0 0.5em;
+}
+
+#navigation li a:hover {
+        color: #00B24B;
+}
+
+#navigation_container {
+   margin: 0 auto;
+   width: 960px;
+}
+
+.rectangle {
+   background: #FF1200;
+   height: 62px;
+   width: 800px;
+   position: relative;
+   -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   z-index: 500; /* the stack order: foreground */
+   margin: 3em 0;
 }
