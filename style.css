@@ -1,23 +1,23 @@
 body{
-	/*background-color: #00FFFF;
-	background-image: url("imgres.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-
-	background: #00FFFF url("imgres.jpg") no-repeat fixed center;*/
-	background-image: url("http://subtlepatterns.com/patterns/wild_flowers.png");
+    background-color: #C2EEFF;
+	/*background-image: url("http://subtlepatterns.com/patterns/wild_flowers.png");*/
 	font-family: 'Palatino', 'Tahoma';
 
 }
 
 p{
+    text-align: center;
 	font-size: 20px;
-	color: #222222;
+	color: #61777F;
 }
 
 h1, h2{
-	color: #FF1200;
+  text-align: center;
+	color: #61777F;
+}
+
+.image{
+  margin: 0 auto;
 }
 
 #fade{
@@ -52,13 +52,13 @@ padding: 0;
         text-shadow: 0 2px 1px rgba(0,0,0,0.5);
         display: block;
         text-decoration: none;
-        color: #00FF6B;
+        color: #5EAECC;
         font-size: 1.6em;
         margin: 0 0.5em;
 }
 
 #navigation li a:hover {
-        color: #00B24B;
+        color: #75D9FF;
 }
 
 #navigation_container {
@@ -67,7 +67,7 @@ padding: 0;
 }
 
 .rectangle {
-   background: #FF1200;
+   background: #3B6D7F;
    height: 62px;
    width: 800px;
    position: relative;
@@ -76,6 +76,8 @@ padding: 0;
    -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
    border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
    z-index: 500; /* the stack order: foreground */
    margin: 3em 0;
 }
