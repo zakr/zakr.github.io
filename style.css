@@ -41,6 +41,7 @@ margin: 0;
 padding: 0;
 }
 
+/*
 #navigation li {
         list-style: none;
         display: block;
@@ -78,6 +79,23 @@ padding: 0;
    border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
-   z-index: 500; /* the stack order: foreground */
+   z-index: 500; /* the stack order: foreground 
    margin: 3em 0;
+}*/
+
+#navbar {
+  background: #3B6D7F;
+}
+
+#navtitle{
+  color: #5EAECC;
+}
+
+#navitem {
+  text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+  color: #5EAECC;
+}
+
+#navitem:hover {
+  color: #75D9FF;
 }
