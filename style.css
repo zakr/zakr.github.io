@@ -1,3 +1,6 @@
+::-moz-selection { color: #FFDBE3;  background: #374A99; }
+::selection      { color: #FFDBE3;  background: #374A99; } 
+
 body{
     background-color: #C2EEFF;
 	/*background-image: url("http://subtlepatterns.com/patterns/wild_flowers.png");*/
