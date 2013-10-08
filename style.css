@@ -2,6 +2,7 @@
 ::selection      { color: #FFDBE3;  background: #374A99; } 
 
 body{
+	width: 100%;
     background-color: #C2EEFF;
 	/*background-image: url("http://subtlepatterns.com/patterns/wild_flowers.png");*/
 	font-family: 'Palatino', 'Tahoma';
