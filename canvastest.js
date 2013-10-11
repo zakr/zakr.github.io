@@ -1,3 +1,5 @@
+(function() {
+
 window.onload = function() {
 
 var canvas = document.getElementById('theCanvas');
@@ -77,7 +79,7 @@ var drawScreen = function(){
   
 };
 
-function updateCanvas(){
+window.updateCanvas = function(){
   xPosition = 0;
   yPosition = 0;
   xDown = true;
@@ -88,60 +90,60 @@ function updateCanvas(){
   canvas.height=height;
 }
 
-function updateObject(){
+window.updateObject = function(){
   objWidth = parseInt(document.getElementById('objectWidth').value,10);
   objHeight = parseInt(document.getElementById('objectHeight').value,10);
   radius = parseInt(document.getElementById('objectRadius').value,10);
 }
 
-function faster(){
+window.faster = function(){
  speed++; 
 }
 
-function slower(){
+window.slower = function(){
   if(speed > 1){
    speed--; 
   }
 }
 
-function reverse(){
+window.reverse = function(){
  xDown = !xDown;
   yDown = !yDown;
 }
 
-function toggleShape(){
+window.toggleShape = function(){
    wantCircle = !wantCircle; 
 }
 
-function backgroundLtBl(){
+window.backgroundLtBl = function(){
   backColor = "#85C2FF";
 }
-function backgroundDkBl(){
+window.backgroundDkBl = function(){
   backColor = "#7C78FF";
 }
-function backgroundPink(){
+window.backgroundPink = function(){
   backColor = "#FFA59E";
 }
-function backgroundLtGn(){
+window.backgroundLtGn = function(){
   backColor = "#65CC4C";
 }
-function backgroundDkGn(){
+window.backgroundDkGn = function(){
   backColor = "#5FB24B";
 }
 
-function objectLtBl(){
+window.objectLtBl = function(){
   objColor = "#85C2FF";
 }
-function objectDkBl(){
+window.objectDkBl = function(){
   objColor = "#7C78FF";
 }
-function objectPink(){
+window.objectPink = function(){
   objColor = "#FFA59E";
 }
-function objectLtGn(){
+window.objectLtGn = function(){
   objColor = "#65CC4C";
 }
-function objectDkGn(){
+window.objectDkGn = function(){
   objColor = "#5FB24B";
 }
 
@@ -162,3 +164,5 @@ window.requestAnimFrame = (function(){
 })();
 
 };
+
+}).call(this);
