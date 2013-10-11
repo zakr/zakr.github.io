@@ -1,6 +1,6 @@
 var canvas = document.getElementById('theCanvas');
-var app = document.getElementById('app');
-app.style.background = '#65CC4C';
+/* var app = document.getElementById('app');
+app.style.background = '#65CC4C'; */
 var width = 432;
 var height = 321;
 
@@ -18,11 +18,14 @@ var objHeight = 50;
 var speed = 1;
 var wantCircle = true;
 
+var backColor = "#85C2FF";
+var objColor = "#7C78FF";
+
 var drawScreen = function(){
-  context.fillStyle = "#85C2FF";
+  context.fillStyle = backColor;
   context.fillRect(0,0,width,height);
   
-  context.fillStyle = "#7C78FF";
+  context.fillStyle = objColor;
   
   if(wantCircle){
     objWidth = objHeight = 2*radius;
@@ -85,8 +88,8 @@ function updateCanvas(){
 
 function updateObject(){
   objWidth = parseInt(document.getElementById('objectWidth').value,10);
-  objHeight = parseInt(document.getElementById('objectHeight').value);
-  radius = parseInt(document.getElementById('objectRadius').value);
+  objHeight = parseInt(document.getElementById('objectHeight').value,10);
+  radius = parseInt(document.getElementById('objectRadius').value,10);
 }
 
 function faster(){
@@ -106,6 +109,38 @@ function reverse(){
 
 function toggleShape(){
    wantCircle = !wantCircle; 
+}
+
+function backgroundLtBl(){
+  backColor = "#85C2FF";
+}
+function backgroundDkBl(){
+  backColor = "#7C78FF";
+}
+function backgroundPink(){
+  backColor = "#FFA59E";
+}
+function backgroundLtGn(){
+  backColor = "#65CC4C";
+}
+function backgroundDkGn(){
+  backColor = "#5FB24B";
+}
+
+function objectLtBl(){
+  objColor = "#85C2FF";
+}
+function objectDkBl(){
+  objColor = "#7C78FF";
+}
+function objectPink(){
+  objColor = "#FFA59E";
+}
+function objectLtGn(){
+  objColor = "#65CC4C";
+}
+function objectDkGn(){
+  objColor = "#5FB24B";
 }
 
 window.requestAnimFrame = (function(){
