@@ -19,6 +19,94 @@
     <!-- KNOCKOUT -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js"></script>
 
+<script>
+        function sitCounter()
+          {
+          if(typeof(Storage)!=="undefined")
+            {
+            if (localStorage.sit)
+              {
+              localStorage.sit=Number(localStorage.sit)+1;
+              }
+            else
+              {
+              localStorage.sit=1;
+              }
+            document.getElementById("sitcount").innerHTML= + localStorage.sit;
+            }
+          else
+            {
+            document.getElementById("sitcount").innerHTML="Your browser does not support web storage.";
+            }
+          }
+      </script>
+
+    <script>
+        function unsitCounter()
+          {
+          if(typeof(Storage)!=="undefined")
+            {
+            if (localStorage.sit)
+              {
+              localStorage.sit=Number(localStorage.sit)-1;
+              }
+            else
+              {
+              localStorage.sit=1;
+              }
+            document.getElementById("sitcount").innerHTML= + localStorage.sit;
+            }
+          else
+            {
+            document.getElementById("sitcount").innerHTML="Your browser does not support web storage.";
+            }
+          }
+      </script>
+  
+  <script>
+        function wannaCounter()
+          {
+          if(typeof(Storage)!=="undefined")
+            {
+            if (localStorage.wanna)
+              {
+              localStorage.wanna=Number(localStorage.wanna)+1;
+              }
+            else
+              {
+              localStorage.wanna=1;
+              }
+            document.getElementById("wannacount").innerHTML= + localStorage.wanna;
+            }
+          else
+            {
+            document.getElementById("wannacount").innerHTML="Your browser does not support web storage.";
+            }
+          }
+      </script>
+
+    <script>
+        function unwannaCounter()
+          {
+          if(typeof(Storage)!=="undefined")
+            {
+            if (localStorage.wanna)
+              {
+              localStorage.wanna=Number(localStorage.wanna)-1;
+              }
+            else
+              {
+              localStorage.wanna=1;
+              }
+            document.getElementById("wannacount").innerHTML= + localStorage.wanna;
+            }
+          else
+            {
+            document.getElementById("wannacount").innerHTML="Your browser does not support web storage.";
+            }
+          }
+      </script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -75,7 +163,45 @@
   
   <h1>MUSIC</h1>
   
-  <iframe width="100%" height="166" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13403434"></iframe>
+    <div class="row">
+    <div class="col-md-1">
+      <div class="btn-group-vertical">
+        <button class="btn" onclick="sitCounter()" type="button">Like!</button>
+        <button class="btn" onclick="unsitCounter()" type="button">Dislike!</button>
+      </div>
+    </div>
+    
+    <div class="col-md-1">
+      <div id="sitcount" class="counter">0</div>
+    </div>
+    
+    
+    <div class="col-md-10">
+      <iframe width="100%" height="100" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13403434"></iframe>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-1">
+      <div class="btn-group-vertical">
+        <button class="btn" onclick="wannaCounter()" type="button">Like!</button>
+        <button class="btn" onclick="unwannaCounter()" type="button">Dislike!</button>
+      </div>
+    </div>
+    
+    <div class="col-md-1">
+      <div id="wannacount" class="counter">0</div>
+    </div>
+    
+    
+    <div class="col-md-10">
+      <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F101188031"></iframe>
+    </div>
+  </div>
+  
+  <!--iframe width="100%" height="100" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13403434"></iframe>
+    
+  <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F101188031"></iframe-->  
     
     From:
     <a href="https://soundcloud.com">SoundCloud</a>
