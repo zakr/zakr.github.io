@@ -1,3 +1,5 @@
+window.onload = function() {
+
 var canvas = document.getElementById('theCanvas');
 /* var app = document.getElementById('app');
 app.style.background = '#65CC4C'; */
@@ -158,3 +160,5 @@ window.requestAnimFrame = (function(){
       requestAnimFrame(animloop);
       drawScreen();
 })();
+
+};
