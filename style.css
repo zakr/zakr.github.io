@@ -106,3 +106,17 @@ padding: 0;
 .myCanvas, #controls{
   float: left;	
 }
+
+#contents{
+  height: 500px;
+  border: solid #8C4F5D;
+  border-radius: 15px;
+}
+
+.goBelow{
+  clear: both;    
+}
+
+.link{
+  
+}
