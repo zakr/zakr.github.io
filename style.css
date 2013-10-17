@@ -109,9 +109,17 @@ padding: 0;
 
 #contents{
   height: 500px;
-  border: solid #374A99;
+  border: solid #61777F;
   border-radius: 15px;
-  background: #8794CC;
+  background: #91B2BF;
+}
+
+#contents h3{
+  color: #303B40;
+}
+
+#contents a{
+  color: #61777F;
 }
 
 .goBelow{
