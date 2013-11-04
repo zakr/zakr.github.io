@@ -149,3 +149,15 @@ a{
   border-left: solid #61777F;
   border-right: solid #61777F;
 }
+
+.story p{
+  text-align: left;
+  text-indent: 2em;
+  margin: 1em 5em;
+}
+
+.story .info{
+  font-style: italic;
+  text-indent: 0;
+  margin: 1em 10em;
+}
