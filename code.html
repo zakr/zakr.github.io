@@ -12,15 +12,19 @@
     <script src="http://code.jquery.com/jquery.min.js"></script>
 <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
-<script type="text/javascript" src="canvastest.js"></script>
-<meta charset=utf-8 />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<!-- CODE -->
+	<script type="text/javascript" src="canvastest.js"></script>
+	<script type="text/javascript" src="fta.js"></script>
+	
+	<meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
     <!-- KNOCKOUT -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="findtheace.css"> 
 </head>
 <body>
 
@@ -80,6 +84,7 @@
   <div id="contents">
     <h3>Table of Contents</h3>
     <a href="#controls" class="link">Trying Canvas</a>
+    <a href="#findtheace" class="link">Find The Ace</a>
   </div>
   
   <h3>Trying Canvas</h3>
@@ -130,6 +135,50 @@
   </div>
   <div class="myCanvas">
   	<title>Chapter 1 Example 6 Canvas Sub Dom Example </title><canvas id="theCanvas"></canvas>
+  </div>
+  </div>
+  
+  <div class="goBelow">
+    <a href="#contents" class="link">To Top</a>
+  </div>
+  
+  <div id="app">
+  <div id="findtheace">
+  <br>
+  <h1>Find The Ace!</h1>
+  
+  <div class="table" data-bind="foreach: cards">
+    
+    <div>
+      <!-- ko if: $parent.playing() -->
+    <span class="card span2" data-bind="text: $data"></span>
+      <!-- /ko -->
+      <!-- ko if: !$parent.playing() -->
+      <span class="card span2"></span>
+      <!-- /ko -->
+
+    <input class="btn btn-info" type="button" value="Pick This Card!" data-bind="click: function(data, event) { $parent.choose(data, event) }, disable: $parent.playing()">
+    </div>
+    <br>
+    
+  </div>
+
+  <br>
+  <div class="bottomscreen">
+  <div>
+    Your Score:
+    <span data-bind="text: score"></span>
+  </div>
+  
+  <br>
+    <!-- ko if: !gameOver() -->
+    <input type="button" class="btn btn-large btn-success" value="Test Your Luck" data-bind="click: start">
+    <!-- /ko -->
+    <!-- ko if: gameOver() -->
+    <input type="button" class="btn btn-large btn-danger" value="Reset Score" data-bind="click: restart">
+    <!-- /ko -->
+  </div>
+  
   </div>
   </div>
   
