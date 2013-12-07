@@ -25,50 +25,6 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script>
-        function clickCounter()
-          {
-          if(typeof(Storage)!=="undefined")
-            {
-            if (localStorage.clickcount)
-              {
-              localStorage.clickcount=Number(localStorage.clickcount)+1;
-              }
-            else
-              {
-              localStorage.clickcount=1;
-              }
-            document.getElementById("result").innerHTML= + localStorage.clickcount + " people have liked this page.";
-            }
-          else
-            {
-            document.getElementById("result").innerHTML="Your browser does not support web storage.";
-            }
-          }
-      </script>
-
-    <script>
-        function unclickCounter()
-          {
-          if(typeof(Storage)!=="undefined")
-            {
-            if (localStorage.clickcount)
-              {
-              localStorage.clickcount=Number(localStorage.clickcount)-1;
-              }
-            else
-              {
-              localStorage.clickcount=1;
-              }
-            document.getElementById("result").innerHTML= + localStorage.clickcount + " people have liked this page.";
-            }
-          else
-            {
-            document.getElementById("result").innerHTML="Your browser does not support web storage.";
-            }
-          }
-      </script>
       
       <!-- Google Analytics -->
         <script>
@@ -165,10 +121,7 @@
 	      <img class="image" src="http://31.media.tumblr.com/tumblr_m6761w57Qr1r7ir0lo1_500.gif">
 	    </section>
         </article>
-    
-    
-    <p><button onclick="clickCounter()" type="button">Like!</button><button onclick="unclickCounter()" type="button">Dislike!</button></p>
-     
+
      <div id="result"></div>
      
      <footer>Copyright 2013 Zak Rome</footer>
