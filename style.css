@@ -150,13 +150,12 @@ a{
 .story p{
   text-align: left;
   text-indent: 2em;
-  margin: 1em;
+  margin: 1em 3em;
   font-family: Gill Sans, Lucida Grande, Lucida Sans Unicode, Lucida, Verdana, Helvetica, Arial, sans-serif;
 }
 
 .info{
   font-style: italic;
   text-indent: 0;
-  margin-right: 10em;
-  margin-left: 10em;
+  /*Fix Margin*/
 }
