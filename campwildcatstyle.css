@@ -1,0 +1,136 @@
+body{
+  background-color: #e6f8ff;
+  margin: 100px 100px;
+  max-width: 1000px;
+  color: #000066;
+  font-size: 1.5em;
+}
+
+/* TOP NAVBAR */
+
+.navbar{
+  background-color: #4D5C99;
+}
+
+.navbar a{
+  color: #A4ABCC !important;
+}
+
+.navbar a:hover{
+  color: #FFC8A6 !important;
+}
+
+.hidden{
+	display: none;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus{
+	background-color: #333D66;
+}
+
+/* Opening */
+
+#opening *{
+  margin-bottom: 50px;
+}
+
+#slogan{
+  text-align: center;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sections */
+
+.image{
+  max-width: 100%;
+}
+
+.attention{
+  color: #FF0000;
+}
+
+.section{
+  padding-top: 50px;
+}
+
+.section h2{
+  padding: 20px 0px;
+  border-bottom: 1px solid #000066;
+  border-top: 1px solid #000066;
+}
+
+blockquote{
+  border: 5px solid #FFC8A6;
+}
+
+.address{
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.amazon{
+  height: 250px;
+  width: 300px;
+  border: none;
+  overflow: hidden;
+}
+
+.panel{
+ 	border: 2px solid #A4ABCC !important;
+}
+
+.panel-heading{
+	background-color: #4D5C99 !important;
+	color: #A4ABCC !important;
+	border: 1px solid #A4ABCC !important;
+}
+
+.panel-body{
+	background-color: #e6f8ff;
+}
+
+/* FOOTER */
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#4D5C99;
+}
+
+#footer .row div{
+  text-align: center;
+  padding-top: 5px;
+  color: #A4ABCC;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 768px) {
+  body {
+    margin: 100px 20px;
+  }
+  #footer{
+    height: 50px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 480px) {
+  body {
+    margin: 100px 20px;
+  }
+  #footer{
+    height: 50px;
+    font-size: 0.8em;
+  }
+}
