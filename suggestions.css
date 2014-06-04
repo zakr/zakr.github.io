@@ -1,0 +1,17 @@
+body{
+  background-color: #6E9EFF;
+  color: #1C2740;
+  text-align: center;
+  margin: 10%;;
+}
+
+.header{
+  font-weight: 900;
+}
+
+.answers button{
+  display: none;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px; 
+}
