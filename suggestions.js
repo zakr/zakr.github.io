@@ -92,5 +92,13 @@ $(document).ready(function () {
       console.log($('#query').val());
       suggest($('#query').val());
     });
+    
+    //Handle Enter
+    $('input#query').bind('keypress', function(e) {
+      var code = e.keyCode || e.which;
+       if(code == 13) { //Enter keycode
+         suggest($('#query').val());
+       }
+    });
   
 });
