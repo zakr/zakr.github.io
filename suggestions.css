@@ -2,16 +2,45 @@ body{
   background-color: #6E9EFF;
   color: #1C2740;
   text-align: center;
-  margin: 10%;;
+  font-size: 20px;
 }
 
 .header{
+  font-size: 50px;
   font-weight: 900;
+}
+
+.input-group input#query,
+.input-group span.input-group-btn button#go{
+  height: 50px;
+  font-size: 30px;
 }
 
 .answers button{
   display: none;
   margin: 5px;
   font-weight: bold;
-  font-size: 20px; 
+  font-size: 30px; 
+}
+
+@media only screen and (max-device-width: 480px) {
+  body{
+    font-size: 45px;
+  }
+
+  .header{
+    font-size: 90px;
+    font-weight: 900;
+  }
+
+  .input-group input#query,
+  .input-group span.input-group-btn button#go{
+    height: 70px;
+    font-size: 45px;
+  }
+
+  .answers button{
+    margin: 5px;
+    font-size: 45px; 
+  }
 }
